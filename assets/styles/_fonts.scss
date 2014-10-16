@@ -1,0 +1,51 @@
+a {
+  text-decoration: none;
+}
+
+.logo a {
+  color: #F1F1F1;
+}
+
+h1 {
+  color: #F1F1F1;
+  font-family: 'latolight';
+  font-size: 4em;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  text-align: center;
+}
+
+h2 {
+  color: #F1F1F1;
+  font-family: 'vollkornitalic';
+  font-size: 1.7em;
+  letter-spacing: 0.1em;
+}
+
+a.contact-links {
+  color: #F1F1F1;
+  font-family: 'vollkornitalic';
+  font-size: 1.4em;
+  letter-spacing: 0.1em;
+}
+
+// a.contact-links:hover {
+//   color: #E8BF98;
+// }
+
+// @media only screen and (max-width: 500px) {
+//   h1 {
+//     font-size: 2.5em;
+//   }
+// }
+
+@media only screen and (max-width: 480px) {
+  h1 {
+    font-family: 'latoregular';
+    font-size: 1.78em;
+  }
+
+  h2 {
+    font-size: 1.1em;
+  }
+}
