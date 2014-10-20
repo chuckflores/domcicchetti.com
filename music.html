@@ -25,7 +25,7 @@
   </head>
   <body>
 
-    <div class="container">
+    <div id="music" class="container">
 
       <header class="slide">     <!-- Add "slideRight" class to items that move right when viewing Nav Drawer  -->
         <ul id="navToggle" class="burger slide">    <!--  Add "slideRight" class to items that move right when viewing Nav Drawer  -->
@@ -55,37 +55,106 @@
 
             <div class="music-container">
               <h2 class="music-header">albums</h2>
-              <div class="album-container">
 
-                <div class="flex-item">
-                  <img class="image-size" src="assets/images/mirage.jpg">
-                </div>
-                <div class="flex-item">
-                  <div class="album-specs">
-                    <hr class="album-separator"></hr>
-                    <h3 class="album-title-text">Mirage</h3>
-                    <h3 class="album-author">Dom Cicchetti and Bill Washer</h3>
-                    <p class="album-info"></p>
-                    <div class"album-link-container">
-                      <a href="https://itunes.apple.com/us/album/mirage/id272459908" class="album-link"><div class="itunes-buy"></div></a>
-                      <a href="http://www.amazon.com/Mirage-Bill-Washer-Dom-Cicchetti/dp/B0019A3Q3I" class="album-link"><div class="amazon-buy"></div></a>
-                    </div>
+              <!-- MIRAGE ALBUM -->
+              <div class="album-container">
+                <img class="image-size" src="assets/images/mirage.jpg">
+                <div class="album-specs">
+                  <hr class="album-separator"></hr>
+                  <h3 class="album-title-text">Mirage</h3>
+                  <h3 class="album-author">Dom Cicchetti and Bill Washer</h3>
+                  <p class="album-info">Released 2008.</p>
+                  <div class"album-link-container">
+                    <a target="_blank" href="https://itunes.apple.com/us/album/mirage/id272459908"><div class="itunes-buy"></div></a>
+                    <a target="_blank" href="http://www.amazon.com/Mirage-Bill-Washer-Dom-Cicchetti/dp/B0019A3Q3I"><div class="amazon-buy"></div></a>
                   </div>
                 </div>
-
               </div>
 
+              <!-- FOLLOW THE ROAD ALBUM -->
+              <div class="album-container">
+                <img class="image-size" src="assets/images/follow-the-road.jpg">
+                <div class="album-specs">
+                  <hr class="album-separator"></hr>
+                  <h3 class="album-title-text">Follow the Road</h3>
+                  <h3 class="album-author">Dom Cicchetti</h3>
+                  <p class="album-info">Released 2015.</p>
+                  <div class"album-link-container">
+                    <a target="_blank" href="?"><div class="itunes-buy"></div></a>
+                    <a target="_blank" href="?"><div class="amazon-buy"></div></a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- MEMORIES SHEET MUSIC -->
+              <div class="album-container">
+                <img class="image-size" src="assets/images/memories.jpg">
+                <div class="album-specs">
+                  <hr class="album-separator"></hr>
+                  <h3 class="album-title-text">Memories of Places and Times</h3>
+                  <h3 class="album-author">Dom Cicchetti</h3>
+                  <p class="album-info">Based on memorable places and times in the composer's life, the music in this collection demands careful attention to interpretation and musical expression. Each piece provides an opportunity to perform lyrical melodies, bolstered by an interesting harmonic structure. Also included are Performance Notes that describe the inspiration for each work, the structure of the piece, or suggested approaches to a successful performance of the music. A CD recording by the composer is available separately.</p>
+                  <div class"album-link-container">
+                    <a target="_blank" href="http://www.amazon.com/Memories-Places-Times-Domenic-Cicchetti/dp/0739024299"><div class="amazon-buy-memories"></div></a>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <div id="music-menu">
+                <h2 class="music-header">music</h2>
+                <a href="#jazz"><h4 class="music-links">Jazz</h4></a>
+                <a href="#poptunes"><h4 class="music-links">Pop Tunes</h4></a>
+                <a href="#musiclibrary"><h4 class="music-links">Music Library</h4></a>
+                <a href="#solopiano"><h4 class="music-links">Solo Piano</h4></a>
+              </div>
+
+              <!-- MOBILE MUSIC HEADER -->
+              <h2 class="music-header-mobile">music</h2>
+
+              <div id="jazz">
+                <iframe class="soundcloud-player" width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/55740778&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+              </div>
+
+              <div id="poptunes">
+                <iframe class="soundcloud-player" width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/55741002&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+              </div>
+
+              <div id="musiclibrary">
+                <iframe class="soundcloud-player" width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/55741211&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+              </div>
+
+              <div id="solopiano">
+                <iframe class="soundcloud-player" width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/55741404&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+              </div>
 
             </div>
           </li>
           <li class="footer-section">
-            <div class="footer-container">
+            <div class="footer-container-music">
+              <a href="#music"><h5>Back to Top</h5></a>
             </div>
           </li>
         </ul>
       </div>
 
     </div>
+
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="assets/js/jq-sticky-anything.min.js"></script>
+
+    <script>
+      $('#music-menu').stickThis({
+          top:    0,    // top position of sticky element, measured from 'ceiling'
+          minscreenwidth: 0,    // element will not be sticky when viewport width smaller than this
+          maxscreenwidth: 999999,   // element will not be sticky when viewport width larger than this
+          zindex:   1,    // z-index value of sticky element
+          debugmode:  false // when true, errors will be logged to console
+      });
+    </script>
+
 
 
   </body>

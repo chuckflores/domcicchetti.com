@@ -27,6 +27,20 @@ h2.about-header {
   letter-spacing: 0.1em;
 }
 
+h2.email-text {
+  color: #F1F1F1;
+  font-size: 1.6em;
+  letter-spacing: 0.1em;
+}
+
+h2.music-header {
+  font-size: 1.8em;
+}
+
+h2.music-header-mobile {
+  font-size: 1.8em;
+}
+
 p.about-text {
   color: #F1F1F1;
   font-family: 'vollkornregular';
@@ -35,16 +49,12 @@ p.about-text {
   margin-bottom: 1em;
 }
 
-
-h2.email-text {
+p.album-info {
   color: #F1F1F1;
-  font-size: 1.6em;
-  letter-spacing: 0.1em;
+  font-family: 'vollkornregular';
+  font-size: 1em;
 }
 
-h2.music-header {
-
-}
 
 h3.album-title-text {
   color: #F1F1F1;
@@ -55,7 +65,27 @@ h3.album-title-text {
 h3.album-author {
   color: #F1F1F1;
   font-family: 'vollkornregular';
-  font-size: 1.4em;
+  font-size: 1.2em;
+}
+
+h4.music-links {
+  color: #F1F1F1;
+  font-size: 1.3em;
+  text-align: center;
+}
+
+h4.music-links:hover {
+  color: #E8BF98;
+}
+
+h5 {
+  color: #F1F1F1;
+  font-family: 'vollkornitalic';
+  font-size: 1em;
+}
+
+h5:hover {
+  text-decoration: underline;
 }
 
 
