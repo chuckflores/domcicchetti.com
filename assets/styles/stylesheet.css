@@ -62,9 +62,10 @@ h2.music-header-mobile {
 p.about-text {
   color: #F1F1F1;
   font-family: 'vollkornregular';
-  font-size: 1.2em;
-  text-indent: 2em;
-  margin-bottom: 1em; }
+  font-size: 1em;
+  line-height: 1.8em;
+  margin-bottom: 2em;
+  text-align: left; }
 
 p.album-info {
   color: #F1F1F1;
@@ -113,9 +114,9 @@ h5:hover {
 /*  Removable CSS  */
 .head-line {
   display: block;
-  color: #F1F1F1;
   height: .5px;
-  width: 520px; }
+  width: 520px;
+  background-image: linear-gradient(90deg, #000000 0%, #FFFFFF 47%, #000000 100%); }
 
 .header-section,
 .body-section,
@@ -246,7 +247,8 @@ hr.album-separator {
 .about-container {
   display: inline-block;
   max-width: 620px;
-  text-align: justify; }
+  margin-right: 0 auto;
+  margin-left: 0 auto; }
 
 .about-text {
   left: 50%; }
@@ -375,7 +377,11 @@ nav li a {
   padding: 24px 25px;
   /*CHANGES THE SPACE BETWEEN THE LINKS*/
   display: block;
-  letter-spacing: 0.06em; }
+  letter-spacing: 0.06em;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
 
 nav li a:hover {
   color: #E8BF98; }
@@ -422,16 +428,20 @@ nav li a:hover {
 
   nav ul {
     height: 100%;
-    overflow-y: auto; }
+    overflow-y: auto;
+    width: 100%; }
 
   nav li {
     display: block;
-    float: none; }
+    float: none;
+    width: 100%; }
 
   nav li a {
     padding: 22px 25px;
     letter-spacing: 3px;
-    font-size: 1.4em; }
+    font-size: 1.4em;
+    border-bottom: 1px solid rgba(232, 191, 152, 0.2);
+    width: 100%; }
 
   nav li a.logo {
     display: none; }
@@ -441,8 +451,7 @@ nav li a:hover {
     background-color: #1B1B1B; }
 
   nav li a:hover {
-    color: #E8BF98;
-    border-bottom: 1px solid rgba(232, 191, 152, 0.2); }
+    color: #E8BF98; }
 
   nav li:first-child a.active,
   nav li:first-child a:hover {
@@ -596,6 +605,12 @@ nav li a:hover {
 .profile-pic {
   width: 240px;
   height: 100%; }
+
+.about-image {
+  max-width: 500px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 2em; }
 
 .image-size {
   height: 200px;

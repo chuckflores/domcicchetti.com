@@ -44,9 +44,11 @@ h2.music-header-mobile {
 p.about-text {
   color: #F1F1F1;
   font-family: 'vollkornregular';
-  font-size: 1.2em;
-  text-indent: 2em;
-  margin-bottom: 1em;
+  font-size: 1em;
+  line-height: 1.8em;
+  // text-indent: 2em;
+  margin-bottom: 2em;
+  text-align: left;
 }
 
 p.album-info {
