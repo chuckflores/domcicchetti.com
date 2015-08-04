@@ -1,11 +1,13 @@
 a {
   text-decoration: none;
+  color: #F1F1F1;
 }
 
 .logo a {
   color: #F1F1F1;
 }
 
+// Logo Font
 h1 {
   color: #F1F1F1;
   font-family: 'latolight';
@@ -15,6 +17,7 @@ h1 {
   text-align: center;
 }
 
+// Classy title
 h2 {
   color: #F1F1F1;
   font-family: 'vollkornitalic';
@@ -22,30 +25,27 @@ h2 {
   letter-spacing: 0.1em;
 }
 
-h2.about-header {
-  font-size: 2em;
-  letter-spacing: 0.1em;
-}
-
-h2.email-text {
-  color: #F1F1F1;
-  font-size: 1.6em;
-  letter-spacing: 0.1em;
-}
-
-h2.music-header {
-  font-size: 1.8em;
-}
-
 h2.music-header-mobile {
   font-size: 1.8em;
 }
+
+h6 {
+  color: #F1F1F1;
+  font-family: 'latolight';
+  font-size: 1.6em;
+  text-transform: capitalize;
+  letter-spacing: 0.1em;
+  text-align: center;
+  line-height: 1.6em;
+}
+
+
 
 p.about-text {
   color: #F1F1F1;
   font-family: 'vollkornregular';
   font-size: 1em;
-  line-height: 1.8em;
+  line-height: 2.0em;
   // text-indent: 2em;
   margin-bottom: 2em;
   text-align: left;
@@ -55,9 +55,10 @@ p.album-info {
   color: #F1F1F1;
   font-family: 'vollkornregular';
   font-size: 1em;
+  line-height: 1.4em;
 }
 
-
+// subtext
 h3.album-title-text {
   color: #F1F1F1;
   font-family: 'vollkornitalic';
@@ -80,6 +81,7 @@ h4.music-links:hover {
   color: #E8BF98;
 }
 
+// small link
 h5 {
   color: #F1F1F1;
   font-family: 'vollkornitalic';
@@ -89,18 +91,6 @@ h5 {
 h5:hover {
   text-decoration: underline;
 }
-
-
-
-// a.contact-links:hover {
-//   color: #E8BF98;
-// }
-
-// @media only screen and (max-width: 500px) {
-//   h1 {
-//     font-size: 2.5em;
-//   }
-// }
 
 @media only screen and (max-width: 480px) {
   h1 {

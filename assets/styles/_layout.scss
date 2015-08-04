@@ -31,6 +31,15 @@
   margin-top: 20px;
 }
 
+.new-release-container {
+  margin-top: 80px;
+}
+
+.new-release-image {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
 .home-sub-title {
   margin-top: 60px;
 }
@@ -263,8 +272,13 @@ hr.album-separator {
       margin-right: 0px;
     }
 
+
     hr.album-separator {
       width: 280px;
+    }
+
+    .about-container {
+      max-width: 100%;
     }
 
 

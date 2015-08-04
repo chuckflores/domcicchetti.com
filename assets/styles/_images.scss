@@ -5,6 +5,10 @@
   height: 100%;
   }
 
+.new-release-image {
+  width: 360px;
+}
+
 // ABOUT PAGE
 
 .about-image {
@@ -22,7 +26,8 @@
 
 .itunes-buy {
   background: url(../icons/itunes-buy.png) no-repeat center;
-  transition: background 0.5 ease;
+  transition: background 1.4s ease-out;
+  -webkit-transition: background 1.4s ease-out;
   width: 40px;
   height: 40px;
 }
@@ -35,7 +40,8 @@
 
 .amazon-buy, .amazon-buy-memories {
   background: url(../icons/amazon-buy.png) no-repeat center;
-  transition: background 0.5 ease;
+  transition: background 1.4s ease-out;
+  -webkit-transition: background 1.4s ease-out;
   width: 40px;
   height: 40px;
 }
@@ -49,7 +55,8 @@
 // CONTACT PAGE
 .email {
   background: url(../icons/email.png) no-repeat center;
-  transition: background 0.5 ease;
+  transition: background 1.4s ease-out;
+  -webkit-transition: background 1.4s ease-out;
   width: 80px;
   height: 80px;
 }
@@ -66,6 +73,15 @@
   max-width: 180px;
   width: 100%;
   height: 100%;
+  }
+
+  .new-release-image {
+  width: 100%;
+}
+
+  // ABOUT PAGE
+  .about-image {
+    width: 100%;
   }
 
   // CONTACT PAGE

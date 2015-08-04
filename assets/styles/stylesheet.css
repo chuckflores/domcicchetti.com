@@ -25,7 +25,8 @@ body {
   -ms-font-smoothing: antialiased; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #F1F1F1; }
 
 .logo a {
   color: #F1F1F1; }
@@ -44,33 +45,31 @@ h2 {
   font-size: 1.7em;
   letter-spacing: 0.1em; }
 
-h2.about-header {
-  font-size: 2em;
-  letter-spacing: 0.1em; }
-
-h2.email-text {
-  color: #F1F1F1;
-  font-size: 1.6em;
-  letter-spacing: 0.1em; }
-
-h2.music-header {
-  font-size: 1.8em; }
-
 h2.music-header-mobile {
   font-size: 1.8em; }
+
+h6 {
+  color: #F1F1F1;
+  font-family: 'latolight';
+  font-size: 1.6em;
+  text-transform: capitalize;
+  letter-spacing: 0.1em;
+  text-align: center;
+  line-height: 1.6em; }
 
 p.about-text {
   color: #F1F1F1;
   font-family: 'vollkornregular';
   font-size: 1em;
-  line-height: 1.8em;
+  line-height: 2.0em;
   margin-bottom: 2em;
   text-align: left; }
 
 p.album-info {
   color: #F1F1F1;
   font-family: 'vollkornregular';
-  font-size: 1em; }
+  font-size: 1em;
+  line-height: 1.4em; }
 
 h3.album-title-text {
   color: #F1F1F1;
@@ -136,6 +135,13 @@ h5:hover {
 
 .profile-pic {
   margin-top: 20px; }
+
+.new-release-container {
+  margin-top: 80px; }
+
+.new-release-image {
+  margin-top: 40px;
+  margin-bottom: 40px; }
 
 .home-sub-title {
   margin-top: 60px; }
@@ -301,7 +307,10 @@ hr.album-separator {
     margin-right: 0px; }
 
   hr.album-separator {
-    width: 280px; } }
+    width: 280px; }
+
+  .about-container {
+    max-width: 100%; } }
 @font-face {
   font-family: 'vollkornregular';
   src: url("../fonts/vollkorn/vollkorn-regular-webfont.eot");
@@ -606,6 +615,9 @@ nav li a:hover {
   width: 240px;
   height: 100%; }
 
+.new-release-image {
+  width: 360px; }
+
 .about-image {
   max-width: 500px;
   margin-left: 0;
@@ -618,7 +630,8 @@ nav li a:hover {
 
 .itunes-buy {
   background: url(../icons/itunes-buy.png) no-repeat center;
-  transition: background 0.5 ease;
+  transition: background 1.4s ease-out;
+  -webkit-transition: background 1.4s ease-out;
   width: 40px;
   height: 40px; }
 
@@ -629,7 +642,8 @@ nav li a:hover {
 
 .amazon-buy, .amazon-buy-memories {
   background: url(../icons/amazon-buy.png) no-repeat center;
-  transition: background 0.5 ease;
+  transition: background 1.4s ease-out;
+  -webkit-transition: background 1.4s ease-out;
   width: 40px;
   height: 40px; }
 
@@ -640,7 +654,8 @@ nav li a:hover {
 
 .email {
   background: url(../icons/email.png) no-repeat center;
-  transition: background 0.5 ease;
+  transition: background 1.4s ease-out;
+  -webkit-transition: background 1.4s ease-out;
   width: 80px;
   height: 80px; }
 
@@ -654,6 +669,12 @@ nav li a:hover {
     max-width: 180px;
     width: 100%;
     height: 100%; }
+
+  .new-release-image {
+    width: 100%; }
+
+  .about-image {
+    width: 100%; }
 
   .email {
     width: 80px;
