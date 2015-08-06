@@ -7,12 +7,20 @@
 
 .new-release-image {
   width: 360px;
+  box-shadow: 0px 0px 4px 2px rgba(255,255,255,.1);
 }
 
 // ABOUT PAGE
 
 .about-image {
-  max-width: 500px;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 2em;
+}
+
+.about-image-2 {
+  width: 100%;
   margin-left: 0;
   margin-right: 0;
   margin-bottom: 2em;

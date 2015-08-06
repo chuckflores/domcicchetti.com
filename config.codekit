@@ -273,6 +273,39 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/images\/dom-photo-1b.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4.31794e+06,
+		"inputAbbreviatedPath": "\/assets\/images\/dom-photo-1b.png",
+		"outputAbbreviatedPath": "\/assets\/images\/dom-photo-1b.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/dom-photo-2.JPG": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 890703,
+		"inputAbbreviatedPath": "\/assets\/images\/dom-photo-2.JPG",
+		"outputAbbreviatedPath": "\/assets\/images\/dom-photo-2.JPG",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/dom-photo-3.JPG": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.20371e+06,
+		"inputAbbreviatedPath": "\/assets\/images\/dom-photo-3.JPG",
+		"outputAbbreviatedPath": "\/assets\/images\/dom-photo-3.JPG",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/images\/follow-the-road.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
