@@ -339,6 +339,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/images\/open-road.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 72409,
+		"inputAbbreviatedPath": "\/assets\/images\/open-road.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/open-road.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/images\/studio.png": {
 		"fileType": 32768,
 		"ignore": 0,
