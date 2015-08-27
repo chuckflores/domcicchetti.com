@@ -376,8 +376,6 @@ header {
 
 nav {
   display: inline-block;
-  margin-left: -170px;
-  /*MOVES NAV RIGHT AND LEFT*/
   text-align: center;
   position: absolute;
   top: 0; }
@@ -386,7 +384,7 @@ nav ul {
   display: inline-block; }
 
 nav li {
-  float: center;
+  float: left;
   display: inline-block; }
 
 nav li a {
