@@ -644,7 +644,7 @@ nav li a:hover {
   margin-bottom: 2em; }
 
 .about-image-2b {
-  width: 360px;
+  max-width: 360px;
   margin-left: 0;
   margin-right: 0;
   margin-top: 1em;
