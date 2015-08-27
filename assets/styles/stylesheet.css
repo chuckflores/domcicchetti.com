@@ -51,7 +51,7 @@ h2.music-header-mobile {
 h6 {
   color: #F1F1F1;
   font-family: 'latolight';
-  font-size: 1.6em;
+  font-size: 1em;
   text-transform: capitalize;
   letter-spacing: 0.1em;
   text-align: center;
@@ -137,7 +137,7 @@ h5:hover {
   margin-top: 20px; }
 
 .new-release-container {
-  margin-top: 80px; }
+  margin-top: 140px; }
 
 .new-release-image {
   margin-top: 40px;
@@ -261,7 +261,12 @@ hr.album-separator {
 
 .contact-container {
   display: inline-block;
-  margin-top: 70px;
+  margin-top: 30px;
+  width: 100%; }
+
+.contact-element-container {
+  display: inline-block;
+  margin-top: 80px;
   text-align: center; }
 
 .contact-link {
@@ -271,8 +276,13 @@ hr.album-separator {
   text-align: center;
   display: inline-block; }
 
-.email-text {
-  margin-top: 20px; }
+.contact-text {
+  margin-top: 20px;
+  margin-bottom: 40px; }
+
+.facebook {
+  text-align: center;
+  display: inline-block; }
 
 @media only screen and (max-width: 780px) {
   .head-line {
@@ -616,7 +626,7 @@ nav li a:hover {
   height: 100%; }
 
 .new-release-image {
-  width: 360px; }
+  width: 300px; }
 
 .about-image {
   width: 100%;
@@ -636,8 +646,8 @@ nav li a:hover {
 
 .itunes-buy {
   background: url(../icons/itunes-buy.png) no-repeat center;
-  transition: background 1.4s ease-out;
-  -webkit-transition: background 1.4s ease-out;
+  transition: background 0.2s ease-in;
+  -webkit-transition: background 0.2s ease-in;
   width: 40px;
   height: 40px; }
 
@@ -648,8 +658,8 @@ nav li a:hover {
 
 .amazon-buy, .amazon-buy-memories {
   background: url(../icons/amazon-buy.png) no-repeat center;
-  transition: background 1.4s ease-out;
-  -webkit-transition: background 1.4s ease-out;
+  transition: background 0.2s ease-in;
+  -webkit-transition: background 0.2s ease-in;
   width: 40px;
   height: 40px; }
 
@@ -660,13 +670,25 @@ nav li a:hover {
 
 .email {
   background: url(../icons/email.png) no-repeat center;
-  transition: background 1.4s ease-out;
-  -webkit-transition: background 1.4s ease-out;
+  transition: background 0.2s ease-in;
+  -webkit-transition: background 0.2s ease-in;
   width: 80px;
   height: 80px; }
 
 .email:hover {
   background: url(../icons/email-hover.png) no-repeat center;
+  width: 80px;
+  height: 80px; }
+
+.facebook {
+  background: url(../icons/facebook.png) no-repeat center;
+  transition: background 0.2s ease-in;
+  -webkit-transition: background 0.2s ease-in;
+  width: 80px;
+  height: 80px; }
+
+.facebook:hover {
+  background: url(../icons/facebook-hover.png) no-repeat center;
   width: 80px;
   height: 80px; }
 
