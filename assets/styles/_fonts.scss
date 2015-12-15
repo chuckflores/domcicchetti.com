@@ -1,3 +1,9 @@
+// font-family: 'Vollkorn', serif;
+
+// font-family: 'Lato', sans-serif;
+
+
+
 a {
   text-decoration: none;
   color: #F1F1F1;
@@ -10,7 +16,8 @@ a {
 // Logo Font
 h1 {
   color: #F1F1F1;
-  font-family: 'latolight';
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
   font-size: 4em;
   text-transform: uppercase;
   letter-spacing: 0.15em;
@@ -20,7 +27,9 @@ h1 {
 // Classy title
 h2 {
   color: #F1F1F1;
-  font-family: 'vollkornitalic';
+  font-family: 'Vollkorn', serif;
+  font-style: italic;
+  font-weight: 400;
   font-size: 1.7em;
   letter-spacing: 0.1em;
 }
@@ -31,7 +40,8 @@ h2.music-header-mobile {
 
 h6 {
   color: #F1F1F1;
-  font-family: 'latolight';
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
   font-size: 1em;
   text-transform: capitalize;
   letter-spacing: 0.1em;
@@ -43,7 +53,8 @@ h6 {
 
 p.about-text {
   color: #F1F1F1;
-  font-family: 'vollkornregular';
+  font-family: 'Vollkorn', serif;
+  font-weight: 400;
   font-size: 1em;
   line-height: 2.0em;
   // text-indent: 2em;
@@ -53,7 +64,8 @@ p.about-text {
 
 p.album-info {
   color: #F1F1F1;
-  font-family: 'vollkornregular';
+  font-family: 'Vollkorn', serif;
+  font-weight: 400;
   font-size: 1em;
   line-height: 1.4em;
 }
@@ -61,13 +73,16 @@ p.album-info {
 // subtext
 h3.album-title-text {
   color: #F1F1F1;
-  font-family: 'vollkornitalic';
+  font-family: 'Vollkorn', serif;
+  font-style: italic;
+  font-weight: 400;
   font-size: 1.4em;
 }
 
 h3.album-author {
   color: #F1F1F1;
-  font-family: 'vollkornregular';
+  font-family: 'Vollkorn', serif;
+  font-weight: 400;
   font-size: 1.2em;
 }
 
@@ -84,7 +99,9 @@ h4.music-links:hover {
 // small link
 h5 {
   color: #F1F1F1;
-  font-family: 'vollkornitalic';
+  font-family: 'Vollkorn', serif;
+  font-style: italic;
+  font-weight: 400;
   font-size: 1em;
 }
 
@@ -94,7 +111,8 @@ h5:hover {
 
 @media only screen and (max-width: 480px) {
   h1 {
-    font-family: 'latoregular';
+    font-family: 'Lato', sans-serif;
+  font-weight: 400;
     font-size: 1.78em;
   }
 

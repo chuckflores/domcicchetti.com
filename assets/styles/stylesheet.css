@@ -1,8 +1,6 @@
 *,
 *:before,
 *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
 html,
@@ -33,7 +31,8 @@ a {
 
 h1 {
   color: #F1F1F1;
-  font-family: 'latolight';
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
   font-size: 4em;
   text-transform: uppercase;
   letter-spacing: 0.15em;
@@ -41,7 +40,9 @@ h1 {
 
 h2 {
   color: #F1F1F1;
-  font-family: 'vollkornitalic';
+  font-family: 'Vollkorn', serif;
+  font-style: italic;
+  font-weight: 400;
   font-size: 1.7em;
   letter-spacing: 0.1em; }
 
@@ -50,7 +51,8 @@ h2.music-header-mobile {
 
 h6 {
   color: #F1F1F1;
-  font-family: 'latolight';
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
   font-size: 1em;
   text-transform: capitalize;
   letter-spacing: 0.1em;
@@ -59,7 +61,8 @@ h6 {
 
 p.about-text {
   color: #F1F1F1;
-  font-family: 'vollkornregular';
+  font-family: 'Vollkorn', serif;
+  font-weight: 400;
   font-size: 1em;
   line-height: 2.0em;
   margin-bottom: 2em;
@@ -67,18 +70,22 @@ p.about-text {
 
 p.album-info {
   color: #F1F1F1;
-  font-family: 'vollkornregular';
+  font-family: 'Vollkorn', serif;
+  font-weight: 400;
   font-size: 1em;
   line-height: 1.4em; }
 
 h3.album-title-text {
   color: #F1F1F1;
-  font-family: 'vollkornitalic';
+  font-family: 'Vollkorn', serif;
+  font-style: italic;
+  font-weight: 400;
   font-size: 1.4em; }
 
 h3.album-author {
   color: #F1F1F1;
-  font-family: 'vollkornregular';
+  font-family: 'Vollkorn', serif;
+  font-weight: 400;
   font-size: 1.2em; }
 
 h4.music-links {
@@ -91,7 +98,9 @@ h4.music-links:hover {
 
 h5 {
   color: #F1F1F1;
-  font-family: 'vollkornitalic';
+  font-family: 'Vollkorn', serif;
+  font-style: italic;
+  font-weight: 400;
   font-size: 1em; }
 
 h5:hover {
@@ -99,7 +108,8 @@ h5:hover {
 
 @media only screen and (max-width: 480px) {
   h1 {
-    font-family: 'latoregular';
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
     font-size: 1.78em; }
 
   h2 {
@@ -115,6 +125,7 @@ h5:hover {
   display: block;
   height: .5px;
   width: 520px;
+  background-image: -webkit-linear-gradient(0deg, #000000 0%, #FFFFFF 47%, #000000 100%);
   background-image: linear-gradient(90deg, #000000 0%, #FFFFFF 47%, #000000 100%); }
 
 .header-section,
@@ -159,32 +170,50 @@ h5:hover {
 
 .album-container {
   display: -webkit-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-align-items: flex-start;
-  align-items: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-justify-content: center;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   /* You can set flex-wrap and flex-direction individually */
   -webkit-flex-direction: row;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   /* Or do it all in one line with flex flow */
   -webkit-flex-flow: row wrap;
-  flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
   /* tweak the where items line up on the row */
   /* valid values are: flex-start, flex-end, space-between, space-around, stretch */
   -webkit-align-content: flex-end;
-  align-content: flex-end;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
   width: 100%;
   margin-bottom: 80px; }
 
 .album-specs {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   display: -webkit-flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-flex-direction: column;
-  align-content: space-between;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
   -webkit-align-content: space-between;
   margin-left: 20px;
   margin-right: 20px;
@@ -219,11 +248,17 @@ hr.album-separator {
   margin: 0;
   width: 100%;
   padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   display: -webkit-flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-justify-content: center;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-align-items: center; }
 
 .music-header-mobile {
@@ -321,42 +356,6 @@ hr.album-separator {
 
   .about-container {
     max-width: 100%; } }
-@font-face {
-  font-family: 'vollkornregular';
-  src: url("../fonts/vollkorn/vollkorn-regular-webfont.eot");
-  src: url("../fonts/vollkorn/vollkorn-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/vollkorn/vollkorn-regular-webfont.woff2") format("woff2"), url("../fonts/vollkorn/vollkorn-regular-webfont.woff") format("woff"), url("../fonts/vollkorn/vollkorn-regular-webfont.ttf") format("truetype"), url("../fonts/vollkorn/vollkorn-regular-webfont.svg#vollkornregular") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'vollkornitalic';
-  src: url("../fonts/vollkorn/vollkorn-italic-webfont.eot");
-  src: url("../fonts/vollkorn/vollkorn-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/vollkorn/vollkorn-italic-webfont.woff2") format("woff2"), url("../fonts/vollkorn/vollkorn-italic-webfont.woff") format("woff"), url("../fonts/vollkorn/vollkorn-italic-webfont.ttf") format("truetype"), url("../fonts/vollkorn/vollkorn-italic-webfont.svg#vollkornitalic") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'latoregular';
-  src: url("../fonts/lato/lato-regular-webfont.eot");
-  src: url("../fonts/lato/lato-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/lato/lato-regular-webfont.woff2") format("woff2"), url("../fonts/lato/lato-regular-webfont.woff") format("woff"), url("../fonts/lato/lato-regular-webfont.ttf") format("truetype"), url("../fonts/lato/lato-regular-webfont.svg#latoregular") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'latoitalic';
-  src: url("../fonts/lato/lato-italic-webfont.eot");
-  src: url("../fonts/lato/lato-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/lato/lato-italic-webfont.woff2") format("woff2"), url("../fonts/lato/lato-italic-webfont.woff") format("woff"), url("../fonts/lato/lato-italic-webfont.ttf") format("truetype"), url("../fonts/lato/lato-italic-webfont.svg#latoitalic") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'latolight';
-  src: url("../fonts/lato/lato-light-webfont.eot");
-  src: url("../fonts/lato/lato-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/lato/lato-light-webfont.woff2") format("woff2"), url("../fonts/lato/lato-light-webfont.woff") format("woff"), url("../fonts/lato/lato-light-webfont.ttf") format("truetype"), url("../fonts/lato/lato-light-webfont.svg#latolight") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'latolight_italic';
-  src: url("../fonts/lato/lato-lightitalic-webfont.eot");
-  src: url("../fonts/lato/lato-lightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/lato/lato-lightitalic-webfont.woff2") format("woff2"), url("../fonts/lato/lato-lightitalic-webfont.woff") format("woff"), url("../fonts/lato/lato-lightitalic-webfont.ttf") format("truetype"), url("../fonts/lato/lato-lightitalic-webfont.svg#latolight_italic") format("svg");
-  font-weight: normal;
-  font-style: normal; }
 .container {
   overflow: hidden;
   background-color: #1B1B1B;
@@ -401,9 +400,6 @@ nav li a {
   display: block;
   letter-spacing: 0.06em;
   -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out; }
 
 nav li a:hover {
@@ -438,7 +434,6 @@ nav li a:hover {
     left: 0;
     /* starting point */
     -webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0); }
 
   .burger {
@@ -496,7 +491,6 @@ nav li a:hover {
     /* starting point */
     opacity: .3;
     -webkit-transform: translate3d(5%, 0, 0) scale(0.97);
-    -moz-transform: translate3d(5%, 0, 0) scale(0.97);
     transform: translate3d(5%, 0, 0) scale(0.97); }
 
   /*Nav Expanding Open Effect*/
@@ -506,8 +500,10 @@ nav li a:hover {
     -webkit-animation: slideIn .35s ease-in-out;
     -moz-transform: translate3d(0, 0, 0) scale(1);
     -moz-animation: slideIn .35s ease-in-out;
-    transform: translate3d(0, 0, 0) scale(1);
-    animation: slideIn .35s ease-in-out; }
+    -webkit-transform: translate3d(0, 0, 0) scale(1);
+            transform: translate3d(0, 0, 0) scale(1);
+    -webkit-animation: slideIn .35s ease-in-out;
+            animation: slideIn .35s ease-in-out; }
 
   @-webkit-keyframes slideIn {
     0% {
@@ -516,20 +512,15 @@ nav li a:hover {
     100% {
       opacity: 1;
       -webkit-transform: translate3d(0, 0, 0) scale(1); } }
-  @-moz-keyframes slideIn {
-    0% {
-      opacity: .3;
-      -moz-transform: translate3d(5%, 0, 0) scale(0.97); }
-    100% {
-      opacity: 1;
-      -moz-transform: translate3d(0, 0, 0) scale(1); } }
   @keyframes slideIn {
     0% {
       opacity: .3;
-      transform: translate3d(5%, 0, 0) scale(0.97); }
+      -webkit-transform: translate3d(5%, 0, 0) scale(0.97);
+              transform: translate3d(5%, 0, 0) scale(0.97); }
     100% {
       opacity: 1;
-      transform: translate3d(0, 0, 0) scale(1); } }
+      -webkit-transform: translate3d(0, 0, 0) scale(1);
+              transform: translate3d(0, 0, 0) scale(1); } }
   /*Nav Shrinking Closed Effect*/
   nav.close {
     opacity: .3;
@@ -537,8 +528,10 @@ nav li a:hover {
     -webkit-animation: slideOut .3s ease-in-out;
     -moz-transform: translate3d(5%, 0, 0) scale(0.97);
     -moz-animation: slideOut .3s ease-in-out;
-    transform: translate3d(5%, 0, 0) scale(0.97);
-    animation: slideOut .3s ease-in-out; }
+    -webkit-transform: translate3d(5%, 0, 0) scale(0.97);
+            transform: translate3d(5%, 0, 0) scale(0.97);
+    -webkit-animation: slideOut .3s ease-in-out;
+            animation: slideOut .3s ease-in-out; }
 
   @-webkit-keyframes slideOut {
     0% {
@@ -547,25 +540,19 @@ nav li a:hover {
     100% {
       opacity: .3;
       -webkit-transform: translate3d(5%, 0, 0) scale(0.97); } }
-  @-moz-keyframes slideOut {
-    0% {
-      opacity: 1;
-      -moz-transform: translate3d(0, 0, 0) scale(1); }
-    100% {
-      opacity: .3;
-      -moz-transform: translate3d(5%, 0, 0) scale(0.97); } }
   @keyframes slideOut {
     0% {
       opacity: 1;
-      transform: translate3d(0, 0, 0) scale(1); }
+      -webkit-transform: translate3d(0, 0, 0) scale(1);
+              transform: translate3d(0, 0, 0) scale(1); }
     100% {
       opacity: .3;
-      transform: translate3d(5%, 0, 0) scale(0.97); } }
+      -webkit-transform: translate3d(5%, 0, 0) scale(0.97);
+              transform: translate3d(5%, 0, 0) scale(0.97); } }
   /* CONTENT ANNIMATION */
   .content {
     /* starting point */
     -webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     z-index: 1; }
 
@@ -576,8 +563,10 @@ nav li a:hover {
     -webkit-animation: open .5s ease-in-out;
     -moz-transform: translate3d(240px, 0, 0);
     -moz-animation: open .5s ease-in-out;
-    transform: translate3d(240px, 0, 0);
-    animation: open .5s ease-in-out; }
+    -webkit-transform: translate3d(240px, 0, 0);
+            transform: translate3d(240px, 0, 0);
+    -webkit-animation: open .5s ease-in-out;
+            animation: open .5s ease-in-out; }
 
   @-webkit-keyframes open {
     0% {
@@ -586,20 +575,16 @@ nav li a:hover {
       -webkit-transform: translate3d(260px, 0, 0); }
     100% {
       -webkit-transform: translate3d(240px, 0, 0); } }
-  @-moz-keyframes open {
-    0% {
-      -moz-transform: translate3d(0, 0, 0); }
-    70% {
-      -moz-transform: translate3d(260px, 0, 0); }
-    100% {
-      -moz-transform: translate3d(240px, 0, 0); } }
   @keyframes open {
     0% {
-      transform: translate3d(0, 0, 0); }
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0); }
     70% {
-      transform: translate3d(260px, 0, 0); }
+      -webkit-transform: translate3d(260px, 0, 0);
+              transform: translate3d(260px, 0, 0); }
     100% {
-      transform: translate3d(240px, 0, 0); } }
+      -webkit-transform: translate3d(240px, 0, 0);
+              transform: translate3d(240px, 0, 0); } }
   /*Content Sliding Closed Effect*/
   header.close,
   .content.close {
@@ -607,29 +592,32 @@ nav li a:hover {
     -webkit-animation: close .3s ease-in-out;
     -moz-transform: translate3d(0, 0, 0);
     -moz-animation: close .3s ease-in-out;
-    transform: translate3d(0, 0, 0);
-    animation: close .3s ease-in-out; }
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    -webkit-animation: close .3s ease-in-out;
+            animation: close .3s ease-in-out; }
 
   @-webkit-keyframes close {
     0% {
       -webkit-transform: translate3d(240px, 0, 0); }
     100% {
       -webkit-transform: translate3d(0, 0, 0); } }
-  @-moz-keyframes close {
-    0% {
-      -moz-transform: translate3d(240px, 0, 0); }
-    100% {
-      -moz-transform: translate3d(0, 0, 0); } }
   @keyframes close {
     0% {
-      transform: translate3d(240px, 0, 0); }
+      -webkit-transform: translate3d(240px, 0, 0);
+              transform: translate3d(240px, 0, 0); }
     100% {
-      transform: translate3d(0, 0, 0); } } }
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0); } } }
 .profile-pic-2 {
   max-width: 620px; }
 
 .new-release-image {
   width: 300px; }
+
+.treble-img {
+  margin-top: 2em;
+  margin-bottom: 4em; }
 
 .about-image {
   width: 100%;
