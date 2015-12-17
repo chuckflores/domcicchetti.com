@@ -7,7 +7,8 @@ html,
 body {
   background-color: #1B1B1B;
   margin: 0;
-  width: 100%; }
+  width: 100%;
+  vertical-align: baseline; }
 
 body {
   background-color: #1B1B1B;
@@ -415,10 +416,10 @@ nav li a:hover {
 
 .burger li {
   width: 30px;
-  height: 4px;
+  height: 2px;
   background-color: #fff;
-  border-radius: 3px;
-  margin: 5px 0; }
+  border-radius: 0px;
+  margin: 6px 0; }
 
 .burger.open li {
   background-color: #d9dde1; }
