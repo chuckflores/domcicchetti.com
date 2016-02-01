@@ -1,99 +1,77 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="description" content="Dom Cicchetti is a pianist, producer, and arranger.">
-    <title>Dom Cicchetti</title>
-    <link href="assets/icons/dc-icon.png" rel="apple-touch-icon" sizes="120x120" />
+<!doctype html>
 
-    <!-- Style Sheets -->
-    <link rel="stylesheet" type="text/css" media="all" href="reset/reset.css" />
-    <link rel="stylesheet" href="assets/styles/stylesheet.css" media="none" onload="if(media!='all')media='all'">
-    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,900|Vollkorn:400,400italic' rel='stylesheet' type='text/css'>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Dom Cicchetti</title>
+  <meta name="description" content="Insert Description Here">
+
+  <link rel="stylesheet" href="assets/styles/styles.css">
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,300,900|Vollkorn:400,400italic' rel='stylesheet' type='text/css'>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script type="text/javascript" language="javascript" src="assets/js/trunk.js"></script>
+</head>
+
+<body>
+  <div class="container">
+
+    <header class="slide">
+      <ul id="navToggle" class="burger slide">
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+
+    </header>
+
+    <nav class="slide">
+      <ul>
+        <li><a href="index.html" class="active">home</a></li>
+        <li><a href="music.html" class="active">music</a></li>
+        <li><a href="about.html" class="active">biography</a></li>
+        <li><a href="contact.html" class="active">contact</a></li>
+      </ul>
+      <div class="line-nav"></div>
+    </nav>
 
 
-     <!-- Scripts -->
-    <script type="text/javascript">
-      if (typeof jQuery == 'undefined')
-        document.write(unescape("%3Cscript src='assets/js/jquery-1.9.js'" +
-                                  "type='text/javascript'%3E%3C/script%3E"))
-    </script>
-    <script type="text/javascript" language="javascript" src="assets/js/trunk.js"></script>
-    <!--[if lt IE 9]
-    <script src="js/html5shiv.js"></script>
-    <![endif]-->
-
-    <!-- Google Analytics -->
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-71423850-1', 'auto');
-      ga('send', 'pageview');
-
-    </script>
 
 
-  </head>
-  <body>
+    <div class="content slide">
 
-    <div class="container">
-
-      <header class="slide">     <!-- Add "slideRight" class to items that move right when viewing Nav Drawer  -->
-        <ul id="navToggle" class="burger slide">    <!--  Add "slideRight" class to items that move right when viewing Nav Drawer  -->
-          <li></li><li></li><li></li>
-        </ul>
-      </header>
-
-      <nav class="slide">
-        <ul>
-          <!-- <li><a href="index.html">home</a></li> -->
-          <li><a href="music.html" class="active">music</a></li>
-
-          <li><a href="about.html" class="active">biography</a></li>
-          <li><a href="contact.html" class="active">contact</a></li>
-        </ul>
-      </nav>
-      <hr class="head-line"></hr>
-
-      <div class="content slide">     <!--  Add "slideRight" class to items that move right when viewing Nav Drawer  -->
-
-        <ul class="responsive">
-          <li class="header-section">
-            <div class="logo">
-              <a href="/"><h1>Dom Cicchetti</h1></a>
+      <ul class="responsive">
+        <li class="header-section">
+          <div class="header-line-container">
+            <div class="header-line"></div>
+          </div>
+          <h1><a href="index.html" class="logo-link">Dom Cicchetti</a></h1>
+        </li>
+        <li class="body-section">
+          <div class="layout-home">
+            <div class="full-img-container">
+              <img class="i-home-main" src="assets/images/dom-photo-3.JPG">
             </div>
-          </li>
-          <li class="body-section">
-            <img class="profile-pic-2" src="assets/images/dom-photo-3.JPG">
-            <!-- <img class="profile-pic" src="assets/images/dom-photo-1.png"> -->
-            <!-- <img class="profile-pic" src="assets/images/dom-photo-1b.png"> -->
-            <h2 class="home-sub-title">Pianist • Arranger • Producer</h2>
+            <h4 class="home-sub-title">Pianist • Arranger • Producer</h4>
+          </div>
 
-            <div class="new-release-container">
-
-             <!--  <div class="new-release-image" style='width:300px; height:270px; margin: -30px 0px 0px -80px; padding:0; border:0; background-image:url(http://www.cdbaby.com/Images/Links/linkmkr_btn4_buyalbum.png);'><a href='http://www.cdbaby.com/cd/domcicchetti' style='display:block; padding:40px 10px 10px 85px; margin:0; border:0; height:270px; background-color:transparent;'><img src='http://CDBaby.name/d/o/domcicchetti.jpg' width='175' height='175' alt='Dom Cicchetti: Open Road' style='border:0; margin:0; padding:0;' /></a></div> -->
-             <a href="https://itunes.apple.com/en/album/id1031596647"><img class="new-release-image" src="assets/images/open-road.jpg"></a>
-              <h6>New Release: Open Road</h6>
-              <h6>Available now on <a href="https://itunes.apple.com/en/album/id1031596647">iTunes</a>, <a href="http://www.amazon.com/gp/product/B014BUCPFC/ref=dm_ws_sp_ps_dp">Amazon</a>, <a href="http://www.cdbaby.com/cd/domcicchetti">CD Baby</a>, and streaming services.</h6>
-
+          <section class="new-album">
+            <h6>New Album Out Now</h6>
+            <h5>Open Road</h5>
+            <div class="home-buy-links">
+              <a target="_blank" href="https://itunes.apple.com/en/album/id1031596647">itunes</a>
+              <a target="_blank" href="http://www.amazon.com/gp/product/B014BUCPFC/ref=dm_ws_sp_ps_dp">Amazon</a>
             </div>
-
-          </li>
-          <!-- <li class="footer-section">
-            <div class="footer-container">
-
-            </div>
-          </li> -->
-        </ul>
-      </div>
-
+            <img src="assets/images/open-road.jpg">
+          </section>
+        </li>
+        <!-- <li class="footer-section">
+          <p class="placefiller">FOOTER</p>
+        </li> -->
+      </ul>
     </div>
 
-
-  </body>
+  </div>
+</body>
 </html>

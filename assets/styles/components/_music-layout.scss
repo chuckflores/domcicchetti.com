@@ -1,0 +1,189 @@
+.music-container {
+  // display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.music-header {
+  margin-bottom: 1em;
+}
+
+.album-container {
+   display: -webkit-flex;
+   display: flex;
+   -webkit-align-items: flex-start;
+   align-items: flex-start;
+   -webkit-justify-content: center;
+   justify-content: center;
+   /* You can set flex-wrap and flex-direction individually */
+   -webkit-flex-direction: row;
+   flex-direction: row;
+   -webkit-flex-wrap: wrap;
+   flex-wrap: wrap;
+   /* Or do it all in one line with flex flow */
+   -webkit-flex-flow: row wrap;
+   flex-flow: row wrap;
+   /* tweak the where items line up on the row */
+   /* valid values are: flex-start, flex-end, space-between, space-around, stretch */
+   -webkit-align-content: flex-end;
+   align-content: flex-end;
+   // max-width: 620px;
+   width: 100%;
+   margin-bottom: 80px;
+}
+
+.album-specs {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  align-content: space-between;
+  -webkit-align-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: left;
+}
+
+
+hr.album-separator {
+  margin-top: 0px;
+  padding-right: 20px;
+  height: 1px;
+  width: 320px;
+}
+
+.album-title-text, .album-author, .album-info {
+  margin-bottom: 30px;
+}
+
+.album-info{
+  max-width: 320px;
+}
+.itunes-buy {
+  float: left;
+
+}
+
+.amazon-buy {
+  position: relative;
+  margin-left: 60px;
+}
+
+.amazon-buy-memories {
+  position: relative;
+  margin-left: 0px;
+}
+
+#music-menu {
+  background-color: rgba(27,27,27,.7);
+  height: 60px;
+  margin: 0;
+  width: 100%;
+  padding-top: 20px;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  -webkit-justify-content: center;
+  align-items: center;
+  -webkit-align-items: center;
+}
+
+.music-header-mobile {
+  display: none;
+}
+
+.music-header {
+  display: inline-block;
+}
+
+.music-links {
+  display: inline;
+  text-align: center;
+  // margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 2px;
+}
+
+
+
+.soundcloud-player {
+  padding-top: 60px;
+  margin-bottom: 40px;
+  max-width: 620px;
+}
+
+.footer-container-music {
+  height: 155px;
+}
+
+
+
+
+
+// MUSIC PAGE
+.image-size {
+  height: 200px;
+  width: 200px;
+}
+
+.itunes-buy {
+  background: url(../icons/itunes-buy.png) no-repeat center;
+  transition: background 0.2s ease-in;
+  -webkit-transition: background 0.2s ease-in;
+  width: 40px;
+  height: 40px;
+}
+
+.itunes-buy:hover {
+  background: url(../icons/itunes-buy-hover.png) no-repeat center;
+  width: 40px;
+  height: 40px;
+}
+
+.amazon-buy, .amazon-buy-memories {
+  background: url(../icons/amazon-buy.png) no-repeat center;
+  transition: background 0.2s ease-in;
+  -webkit-transition: background 0.2s ease-in;
+  width: 40px;
+  height: 40px;
+}
+
+.amazon-buy:hover, .amazon-buy-memories:hover {
+  background: url(../icons/amazon-buy-hover.png) no-repeat center;
+  width: 40px;
+  height: 40px;
+}
+
+
+@media only screen and (max-width: 780px) {
+  hr.album-separator {
+    margin-top: 1em;
+
+  }
+
+  // MUSIC PAGE
+
+  .album-specs {
+    // margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  // hr.album-separator {
+  //   width: 320px;
+
+  // }
+
+  #music-menu {
+
+      position: absolute;
+      right: -1000px;
+    }
+
+  .music-header-mobile {
+    display: inline-block;
+    text-align: center;
+  }
+
+}

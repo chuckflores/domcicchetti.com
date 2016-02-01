@@ -1,72 +1,55 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="description" content="Dom Cicchetti is a pianist, producer, and arranger.">
-    <title>Dom Cicchetti</title>
-    <link href="assets/icons/dc-icon.png" rel="apple-touch-icon" sizes="120x120" />
+<!doctype html>
 
-    <!-- Style Sheets -->
-    <link rel="stylesheet" type="text/css" media="all" href="reset/reset.css" />
-     <link rel="stylesheet" href="assets/styles/stylesheet.css" media="none" onload="if(media!='all')media='all'">
-    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,900|Vollkorn:400,400italic' rel='stylesheet' type='text/css'>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Dom Cicchetti</title>
+  <meta name="description" content="Insert Description Here">
+
+  <link rel="stylesheet" href="assets/styles/styles.css">
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,300,900|Vollkorn:400,400italic' rel='stylesheet' type='text/css'>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script type="text/javascript" language="javascript" src="assets/js/trunk.js"></script>
+</head>
+
+<body>
+  <div class="container">
+
+    <header class="slide">
+      <ul id="navToggle" class="burger slide">
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+
+    </header>
+
+    <nav class="slide">
+      <ul>
+        <li><a href="index.html" class="active">home</a></li>
+        <li><a href="music.html" class="active">music</a></li>
+        <li><a href="about.html" class="active">biography</a></li>
+        <li><a href="contact.html" class="active">contact</a></li>
+      </ul>
+      <div class="line-nav"></div>
+    </nav>
 
 
-     <!-- Scripts -->
-    <script type="text/javascript">
-      if (typeof jQuery == 'undefined')
-        document.write(unescape("%3Cscript src='assets/js/jquery-1.9.js'" +
-                                  "type='text/javascript'%3E%3C/script%3E"))
-    </script>
-    <script type="text/javascript" language="javascript" src="assets/js/trunk.js"></script>
-    <!--[if lt IE 9]
-    <script src="js/html5shiv.js"></script>
-    <![endif]-->
 
-    <!-- Google Analytics -->
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-      ga('create', 'UA-71423850-1', 'auto');
-      ga('send', 'pageview');
+    <div class="content slide">
 
-    </script>
-  </head>
-  <body>
-
-    <div id="music" class="container">
-
-      <header class="slide">     <!-- Add "slideRight" class to items that move right when viewing Nav Drawer  -->
-        <ul id="navToggle" class="burger slide">    <!--  Add "slideRight" class to items that move right when viewing Nav Drawer  -->
-          <li></li><li></li><li></li>
-        </ul>
-      </header>
-
-      <nav class="slide">
-        <ul>
-          <li><a href="music.html" class="active">music</a></li>
-
-          <li><a href="about.html" class="active">biography</a></li>
-          <li><a href="contact.html" class="active">contact</a></li>
-        </ul>
-      </nav>
-      <hr class="head-line"></hr>
-
-      <div class="content slide">     <!--  Add "slideRight" class to items that move right when viewing Nav Drawer  -->
-
-        <ul class="responsive">
-          <li class="header-section">
-            <div class="logo">
-              <a href="/"><h1>Dom Cicchetti</h1></a>
-            </div>
-          </li>
-          <li class="body-section">
-
+      <ul class="responsive">
+        <li class="header-section">
+          <div class="header-line-container">
+            <div class="header-line"></div>
+          </div>
+          <h1><a href="index.html" class="logo-link">Dom Cicchetti</a></h1>
+        </li>
+        <li class="body-section">
+          <div class="layout-about">
             <div class="music-container">
               <h2 class="music-header">albums</h2>
 
@@ -115,18 +98,7 @@
                 </div>
               </div>
 
-
-
-              <!-- <div id="music-menu">
-                <h2 class="music-header">music</h2>
-                <a href="#jazz"><h4 class="music-links">Jazz</h4></a>
-                <a href="#poptunes"><h4 class="music-links">Pop Tunes</h4></a>
-                <a href="#musiclibrary"><h4 class="music-links">Music Library</h4></a>
-                <a href="#solopiano"><h4 class="music-links">Solo Piano</h4></a>
-              </div> -->
-
-              <!-- MOBILE MUSIC HEADER -->
-              <h2 class="music-header-mobile">music</h2>
+              <h2>music</h2>
 
               <div id="solopiano">
 
@@ -147,32 +119,14 @@
 
 
             </div>
-          </li>
-          <li class="footer-section">
-            <div class="footer-container-music">
-              <a href="#music"><h5>Back to Top</h5></a>
-            </div>
-          </li>
-        </ul>
-      </div>
-
+          </div>
+        </li>
+        <!-- <li class="footer-section">
+          <p class="placefiller">FOOTER</p>
+        </li> -->
+      </ul>
     </div>
 
-
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="assets/js/jq-sticky-anything.min.js"></script>
-
-    <script>
-      $('#music-menu').stickThis({
-          top:    0,    // top position of sticky element, measured from 'ceiling'
-          minscreenwidth: 0,    // element will not be sticky when viewport width smaller than this
-          maxscreenwidth: 999999,   // element will not be sticky when viewport width larger than this
-          zindex:   1,    // z-index value of sticky element
-          debugmode:  false // when true, errors will be logged to console
-      });
-    </script>
-
-
-
-  </body>
+  </div>
+</body>
 </html>
